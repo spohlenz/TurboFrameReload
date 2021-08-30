@@ -1,4 +1,11 @@
 <h1>Demo#index</h1>
 
-<%= link_to "Update Time", time_path, data: { turbo_frame: "time" } %>
-<turbo-frame id="time"></turbo-frame>
+<div>
+  <%= link_to "Update Time", time_path, data: { turbo_frame: "time" } %>
+  <turbo-frame id="time"></turbo-frame>
+</div>
+
+<div>
+  <%= link_to "Update Time (with Stimulus frame reset)", time_with_reset_path, data: { turbo_frame: "time-with-reset" } %>
+  <turbo-frame id="time-with-reset" data-controller="reset-frame"></turbo-frame>
+</div>

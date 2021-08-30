@@ -4,4 +4,7 @@ class DemoController < ApplicationController
 
   def time
   end
+
+  def time_with_reset
+  end
 end
